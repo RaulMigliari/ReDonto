@@ -1,0 +1,7 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/baseline_swipe_24"
+        android:gravity="center"
+        android:width="60dp"
+        android:height="60dp" />
+</layer-list>

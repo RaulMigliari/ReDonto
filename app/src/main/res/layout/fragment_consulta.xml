@@ -1,0 +1,197 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/top_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/tvTituloConfig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/consulta"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageFundo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:scaleType="matrix"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/circles" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/white_background"
+                    android:elevation="3dp"
+                    android:minHeight="450dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ivImagemConsulta1"
+                                    android:layout_width="350dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="05dp" />
+
+                                <ImageView
+                                    android:id="@+id/ivImagemConsulta2"
+                                    android:layout_width="350dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp" />
+
+                                <ImageView
+                                    android:id="@+id/ivImagemConsulta3"
+                                    android:layout_width="350dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <TextView
+                            android:id="@+id/tvSemPaciente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Volte para a tela de chamados para aceitar um novo chamado"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/btnReturnHome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:text="@string/ir_para_chamados"
+                            android:backgroundTint="@color/azulPerf"
+                            app:layout_constraintTop_toBottomOf="@+id/tvSemPaciente" />
+
+                        <TextView
+                            android:id="@+id/tvNomeConsulta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="16sp"
+                            android:layout_marginStart="10dp"
+                            app:layout_constraintTop_toTopOf="@+id/tvNomeConsul"
+                            app:layout_constraintStart_toEndOf="@+id/tvNomeConsul"/>
+
+                        <TextView
+                            android:id="@+id/tvNomeConsul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:textSize="16sp"
+                            android:text="@string/nomeCad"
+                            app:layout_constraintStart_toStartOf="@+id/horizontalScrollView2"
+                            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+                        <TextView
+                            android:id="@+id/tvContatoConsul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:textSize="16sp"
+                            android:text="Entre em contato com o paciente:"
+                            app:layout_constraintStart_toStartOf="@+id/tvNomeConsul"
+                            app:layout_constraintTop_toBottomOf="@+id/tvNomeConsul" />
+
+                        <TextView
+                            android:id="@+id/tvTelefoneConsulta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:textSize="16sp"
+                            android:text=""
+                            app:layout_constraintStart_toEndOf="@+id/tvTelefoneConsul"
+                            app:layout_constraintTop_toTopOf="@+id/tvTelefoneConsul" />
+
+                        <TextView
+                            android:id="@+id/tvTelefoneConsul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:textSize="16sp"
+                            android:text="Telefone:"
+                            app:layout_constraintStart_toStartOf="@+id/horizontalScrollView2"
+                            app:layout_constraintTop_toBottomOf="@+id/tvContatoConsul" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

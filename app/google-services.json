@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "725859545069",
+    "project_id": "redonto-951d8",
+    "storage_bucket": "redonto-951d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725859545069:android:687850ab4395c3a14881e4",
+        "android_client_info": {
+          "package_name": "br.com.minhaempresa.redonto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "725859545069-it9raaqe3pg18uf3v516mfug3v8ipt0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL9_l_GVsNm8cIQu7a2YVVCXI0wmXXabE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "725859545069-it9raaqe3pg18uf3v516mfug3v8ipt0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725859545069:android:6c580128c88534b24881e4",
+        "android_client_info": {
+          "package_name": "com.example.dentistaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "725859545069-it9raaqe3pg18uf3v516mfug3v8ipt0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL9_l_GVsNm8cIQu7a2YVVCXI0wmXXabE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "725859545069-it9raaqe3pg18uf3v516mfug3v8ipt0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

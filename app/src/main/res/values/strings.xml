@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Redonto</string>
+    <string name="cad">Não possue uma conta? Faça o seu cadastro</string>
+    <string name="criarcad">Cadastro</string>
+    <string name="login">Login</string>
+    <string name="senha">Senha:</string>
+    <string name="email">Email:</string>
+    <string name="Esqsenha">Esqueceu sua senha?</string>
+    <string name="nomeCad">Nome:</string>
+    <string name="cpfCad">CPF:</string>
+    <string name="emailCad">Email:</string>
+    <string name="senhaCad">Senha:</string>
+    <string name="telefoneCad">Telefone:</string>
+    <string name="Endereco1Cad">Endereço 1:</string>
+    <string name="Endereco2Cad">Endereço 2:</string>
+    <string name="Endereco3Cad">Endereço 3:</string>
+    <string name="CurriculoCad">Currículo:</string>
+    <string name="Cadastrar">Cadastrar</string>
+    <string name="title_activity_chamados">Chamados</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="receber_chamados">Receber Chamados</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ativar_chamados">Ativar Chamados</string>
+    <string name="ative_as_chamadas_para_receb_las">Ative as Chamadas Para Recebê-las</string>
+    <string name="chamados">Chamados</string>
+    <string name="ir_para_configura_es">Ir para Configurações</string>
+    <string name="editar">Editar</string>
+    <string name="verificar">Verificar</string>
+    <string name="endere_os">Endereços:</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="avalia_es">Avaliações</string>
+    <string name="configura_es">Configurações</string>
+    <string name="curriculo">Currículo</string>
+    <string name="telefone">Telefone:</string>
+    <string name="cpf">CPF:</string>
+    <string name="editar_curr_culo">Editar Currículo</string>
+    <string name="editar_endere_os">Editar Endereços</string>
+    <string name="rua">Rua:</string>
+    <string name="bairro">Bairro:</string>
+    <string name="n_mero">Número:</string>
+    <string name="complemento">Complemento:</string>
+    <string name="cep">CEP:</string>
+    <string name="detalhes">Detalhes</string>
+    <string name="idade">Idade:</string>
+    <string name="aceitar">Aceitar</string>
+    <string name="recusar">Recusar</string>
+    <string name="status">Status:</string>
+    <string name="voc_j_est_em_consulta">Você jé está em consulta</string>
+    <string name="ir_para_consulta">Ir para Consulta</string>
+    <string name="esperando_confirma_o">Esperando Confirmação</string>
+    <string name="voc_n_o_aceitou_nenhum_chamado_ainda">Você não aceitou nenhum chamado ainda</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="consulta">Consulta</string>
+    <string name="ir_para_chamados">Ir para chamados</string>
+    <string name="default_notification_channel_id" translatable="false">canal_padrao</string>
+    <string name="fcm_default_title_message" translatable="false">Mensagem</string>
+    <string name="estamos_procurando_por_chamados">Estamos procurando por chamados</string>
+</resources>

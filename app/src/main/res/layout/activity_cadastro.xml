@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cadastro">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5f5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:background="@drawable/top_background"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/tvTituloConfig"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:text="Cadastro"
+                            android:textColor="@color/white"
+                            android:textSize="40sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageFundo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:scaleType="matrix"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/circles" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/white_background"
+                            android:elevation="3dp"
+                            android:minHeight="600dp"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ivLogoCadastro"
+                                    android:layout_width="86dp"
+                                    android:layout_height="76dp"
+                                    android:layout_alignStart="@+id/etNomeCad"
+                                    android:layout_alignEnd="@+id/etNomeCad"
+                                    android:layout_marginStart="83dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="92dp"
+                                    android:src="@drawable/teethkidsicone"
+                                    app:layout_constraintEnd_toStartOf="@+id/etNomeCad"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tvNomeCad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/ivLogoCadastro"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/nomeCad"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etNomeCad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvNomeCad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvCpfCad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etNomeCad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/cpfCad"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etCpfCad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvCpfCad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvEmailCad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etCpfCad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/emailCad"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etEmailCad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvEmailCad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp"
+                                    android:inputType="textEmailAddress"
+                                    android:maxLength="25" />
+
+                                <TextView
+                                    android:id="@+id/tvSenhaCad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etEmailCad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/senhaCad"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etSenhaCad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvSenhaCad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp"
+                                    android:inputType="textPassword"
+                                    android:maxLength="20" />
+
+                                <TextView
+                                    android:id="@+id/tvTelefoneCad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etSenhaCad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/telefoneCad"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etTelefoneCad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvTelefoneCad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <View
+                                    android:id="@+id/view1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_below="@+id/etTelefoneCad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginEnd="60dp"
+                                    android:background="@color/linha" />
+
+                                <TextView
+                                    android:id="@+id/tvEndereco1Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/view1"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/Endereco1Cad"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvCep1Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvEndereco1Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/cep"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etCep1Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvCep1Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvRua1Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etCep1Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/rua"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etRua1Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvRua1Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvBairro1Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etRua1Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/bairro"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etBairro1Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvBairro1Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvNumero1Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etBairro1Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/n_mero"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etNumero1Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvNumero1Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvComplemento1Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etNumero1Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/complemento"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etComplemento1Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvComplemento1Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <View
+                                    android:id="@+id/view2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_below="@+id/etComplemento1Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginEnd="60dp"
+                                    android:background="@color/linha" />
+
+                                <TextView
+                                    android:id="@+id/tvEndereco2Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/view2"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/Endereco2Cad"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvCep2Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvEndereco2Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/cep"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etCep2Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvCep2Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvRua2Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etCep2Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/rua"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etRua2Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvRua2Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvBairro2Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etRua2Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/bairro"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etBairro2Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvBairro2Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvNumero2Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etBairro2Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/n_mero"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etNumero2Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvNumero2Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvComplemento2Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etNumero2Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/complemento"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etComplemento2Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvComplemento2Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <View
+                                    android:id="@+id/view3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_below="@+id/etComplemento2Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginEnd="60dp"
+                                    android:background="@color/linha" />
+
+
+                                <TextView
+                                    android:id="@+id/tvEndereco3Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/view3"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/Endereco3Cad"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvCep3Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvEndereco3Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/cep"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etCep3Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvCep3Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvRua3Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etCep3Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/rua"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etRua3Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvRua3Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvBairro3Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etRua3Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/bairro"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etBairro3Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvBairro3Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvNumero3Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etBairro3Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/n_mero"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etNumero3Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvNumero3Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <TextView
+                                    android:id="@+id/tvComplemento3Cad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etNumero3Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/complemento"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/etComplemento3Cad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvComplemento3Cad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp" />
+
+                                <View
+                                    android:id="@+id/view4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_below="@+id/etComplemento3Cad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginEnd="60dp"
+                                    android:background="@color/linha" />
+
+                                <TextView
+                                    android:id="@+id/tvCurriculoCad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/view4"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/CurriculoCad"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+
+                                <EditText
+                                    android:id="@+id/etCurriculoCad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvCurriculoCad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:hint="Máximo de 2000 palavras"
+                                    android:maxLength="2000" />
+
+                                <TextView
+                                    android:id="@+id/tvSenhaFimCad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etCurriculoCad"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="Crie uma senha para finalizar as consultas:"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+
+                                <EditText
+                                    android:id="@+id/etSenhaFimCad"
+                                    style="@style/Edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tvSenhaFimCad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp"
+                                    android:layout_marginBottom="20dp"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/ivCad"
+                                    android:layout_width="200dp"
+                                    android:layout_height="200dp"
+                                    android:layout_below="@id/btnGallery"
+                                    android:layout_alignStart="@+id/btnGallery"
+                                    android:layout_alignEnd="@+id/btnGallery"
+                                    android:scaleType="centerCrop"
+                                    android:layout_marginBottom="20dp"
+                                    />
+
+                                <Button
+                                    android:id="@+id/btnCamera"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/etSenhaFimCad"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:backgroundTint="@color/azulPerf"
+                                    android:text="Abrir Câmera" />
+
+                                <Button
+                                    android:id="@+id/btnGallery"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/btnCamera"
+                                    android:layout_marginLeft="60dp"
+                                    android:layout_marginRight="60dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:backgroundTint="@color/azulPerf"
+                                    android:text="Abrir Galeria" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnCriarCad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:backgroundTint="@color/blue2"
+                            android:text="@string/Cadastrar"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
